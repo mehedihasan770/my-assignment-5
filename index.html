@@ -17,7 +17,7 @@
     <!-- header section -->
      <header>
         <!-- nav section -->
-        <div class="m-auto py-6 px-12 bg-white flex justify-between items-center">
+        <div class="m-auto py-6 px-12 bg-white flex justify-between items-center flex-col md:flex-row">
             <div class="flex items-center gap-3">
                 <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
                 <h1 class="text-[#006747] font-extrabold text-2xl">Emergency<br>Service</h1>
@@ -25,22 +25,22 @@
             <div class="flex items-center gap-5">
                 <div class="bg-green-50 py-3 px-9 rounded-[50px] font-black flex items-center gap-[10px]"><span id="favorite-num">0</span> <img class="w-6 h-6" src="./assets/heart.png" alt=""></div>
                 <div class="bg-green-50 py-3 px-9 rounded-[50px] font-black flex items-center gap-[10px]"><span id="coin-num">100</span> <img class="w-6 h-6" src="./assets/coin.png" alt=""></div>
-                <div class="bg-[#00A63E] py-3 px-9 rounded-[50px] text-white font-semibold"><span id="Copy-num">0</span> Copy</div>
+                <div class="bg-[#00A63E] py-3 px-9 rounded-[50px] text-white font-semibold flex gap-[10px]"><span id="Copy-num">0</span> Copy</div>
             </div>
         </div>
         <!-- banner section -->
-        <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col justify-center items-center gap-3 py-6">
+        <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col justify-center items-center gap-3 py-6 px-4 md:px-0">
             <img class="w-[92px]" src="./assets/logo-dark.png" alt="">
-            <h1 class="font-bold text-[40px] text-white">Emergency Service Directory</h1>
-            <p class="font-semibold text-xl text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <h1 class="font-bold text-[40px] text-white text-center">Emergency Service Directory</h1>
+            <p class="font-semibold text-xl text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </div>
      </header>
      <!-- main section -->
       <main>
-        <div class="max-w-[95%] m-auto mt-12 grid gap-8 grid-cols-12">
+        <div class="max-w-[95%] m-auto mt-12 grid gap-8 md:grid-cols-12">
             <!-- card section -->
-            <div class="col-span-9 mb-10">
-                <div class="grid grid-cols-3 gap-8">
+            <div class=" md:col-span-9 mb-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-white rounded-xl shadow-md p-8 box-border">
                         <div class="flex items-center justify-between">
                             <div class="p-3 rounded-2xl bg-[#FFE3E2]">
@@ -224,7 +224,7 @@
                 </div>
             </div>
             <!-- card history section -->
-            <div class="col-span-3 bg-white rounded-xl shadow-md mb-10 p-6">
+            <div class="md:col-span-3 bg-white rounded-xl shadow-md mb-10 p-6">
                 <div class="flex items-center justify-between mb-4">
                     <h1 class="font-medium text-xl"><i class="fa-regular fa-clock text-[#5C5C5C]"></i> Call History</h1>
                     <div id="clear-btn" class="bg-[#00A63E] py-3 px-9 rounded-[50px] text-white font-semibold">Clear</div>
