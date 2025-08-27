@@ -51,3 +51,15 @@ clearBtn.addEventListener("click", function(){
     const parentDiv = document.getElementById("parent-div");
     parentDiv.innerText = "";
 })
+
+const copyBtns = getCardBtn("Copy-btn");
+for(const copyBtn of copyBtns){
+    copyBtn.addEventListener("click", function(){
+        const copyNum = getInnerNum("Copy-num");
+        const cardNum = copyBtn.parentNode.parentNode.childNodes[5].innerText;
+        navigator.clipboard.writeText(cardNum);
+        const currentNum = parseInt(copyNum.innerText);
+        alert(`📋Number copied successfully ${cardNum}`);
+        copyNum.innerText = currentNum + 1;
+    })
+}
