@@ -34,9 +34,9 @@ for(const callBtn of callBtns){
         const createDiv = document.createElement("div")
         const parentDiv = document.getElementById("parent-div")
         createDiv.innerHTML = `
-        <div class="bg-[#FAFAFA] p-4 flex items-center justify-between rounded-lg mt-2">
+        <div class="bg-[#FAFAFA] p-4 flex items-center justify-between rounded-lg mt-3">
             <div>
-                <h1 class="font-semibold text-lg">${cardTitle}</h1>
+                <h1 class="font-semibold md:text-xl">${cardTitle}</h1>
                 <p class="text-lg text-[#5C5C5C]">${cardNum}</p>
             </div>
             <span class="text-lg">${realTime.toLocaleTimeString()}</span>
